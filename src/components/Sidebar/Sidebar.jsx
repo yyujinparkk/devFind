@@ -9,7 +9,7 @@ function Sidebar() {
     const htmlElement = document.documentElement;
     const isDarkModeEnabled = htmlElement.classList.contains('dark');
 
-    if (isDarkModeEnabled) {
+    if (!isDarkModeEnabled) {
       htmlElement.classList.remove('dark');
       setTheme('light');
     } else {
